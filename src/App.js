@@ -6,8 +6,14 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
+    <header>
+     <h1>MOVIE FINDER</h1>
+    </header>
       <SearchBar/>
       <MovieView/>
+      <footer>
+      
+      </footer>
     </div>
   );
 }
