@@ -5,6 +5,9 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
+    <header>
+      <input className="search" type="text" placeholder="Search..."/>
+    </header>
       <MovieView/>
     </div>
   );
