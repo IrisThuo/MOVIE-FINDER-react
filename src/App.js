@@ -1,6 +1,7 @@
-import React from "react";
+import React ,{useState} from "react";
 import MovieView from "./views/MovieView";
 import SearchBar from "./components/SearchBar";
+import Login from "./components/Login";
 import "./App.css";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <header>
      <h1>MOVIE FINDER</h1>
     </header>
+      <Login/>
       <SearchBar/>
       <MovieView/>
       <footer>

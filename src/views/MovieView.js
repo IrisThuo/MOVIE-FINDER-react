@@ -26,16 +26,16 @@ function MovieView() {
 //     )
 //    })
 
-    return (
-        <div className="movie-container">
-            {movies.map((movie, index) => (
-                <Movie
-                key={index}
-                data={movie}
-                />
-            ))}
-        </div>
-    );
+    // return (
+    //     <div className="movie-container">
+    //         {movies.map((movie, index) => (
+    //             <Movie
+    //             key={index}
+    //             data={movie}
+    //             />
+    //         ))}
+    //     </div>
+    // );
 }
 
 export default MovieView;
