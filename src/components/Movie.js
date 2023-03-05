@@ -6,13 +6,17 @@ function Movie({title, description,runtime, year }) {
     return (
         <div className="movie">
         
-            <img src= "https://loremflickr.com/320/240" alt= "movie poster"/>
+            <img src= "https://loremflickr.com/320/250" alt= "movie poster"/>
         
         <div className="movie-info">
             <h3>{title}</h3>
+            <p>{year}</p>
+            <p>{runtime}</p>
+        </div>
+
+        <div className='movie-over'>
+            <h2>Overview</h2>
             <p>{description}</p>
-            <h3>{year}</h3>
-            <h3>{runtime}</h3>
         </div>
 
         </div>
