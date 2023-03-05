@@ -27,7 +27,7 @@ function MovieView() {
 //    })
 
     return (
-        <div>
+        <div className="movie-container">
             {movies.map((movie, index) => (
                 <Movie
                 key={index}
