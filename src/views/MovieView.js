@@ -28,8 +28,11 @@ function MovieView() {
 
     return (
         <div>
-            {movies.map((movie) => (
-                <Movie/>
+            {movies.map((movie, index) => (
+                <Movie
+                key={index}
+                data={movie}
+                />
             ))}
         </div>
     );
