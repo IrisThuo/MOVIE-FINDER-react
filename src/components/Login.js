@@ -8,13 +8,14 @@ function Login(props) {
 
     function handleSubmit(e){
         e.preventDefault()
-  }
+    }
 
    
 
     return (
-        <div>
+        <div className='auth-form-container'>
             <form onSubmit={handleSubmit}>
+            <h2>LOGIN</h2>
             <div>
             <label>USERNAME</label>
             <input
@@ -39,7 +40,7 @@ function Login(props) {
             </div>
             <button >LOG IN</button>
             </form>
-            <a href="">New Here? Register</a>
+            <button onClick={() => props.onFormSwitch('register')}>New Here? Register</button>
         </div>
     );
 }

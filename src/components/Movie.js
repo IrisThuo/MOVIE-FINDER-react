@@ -6,7 +6,7 @@ function Movie({title, description,runtime, year }) {
     return (
         <div className="movie">
         
-            <img src= "https://loremflickr.com/320/250" alt= "movie poster"/>
+            <img src= "https://loremflickr.com/360/450" alt= "movie poster"/>
         
         <div className="movie-info">
             <h3>{title}</h3>

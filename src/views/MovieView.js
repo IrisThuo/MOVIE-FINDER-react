@@ -1,5 +1,6 @@
 import React,{ useEffect, useState} from 'react';
 import Movie from '../components/Movie';
+import SearchBar from '../components/SearchBar';
 
 function MovieView() {
 
@@ -26,16 +27,19 @@ function MovieView() {
 //     )
 //    })
 
-    // return (
-    //     <div className="movie-container">
-    //         {movies.map((movie, index) => (
-    //             <Movie
-    //             key={index}
-    //             data={movie}
-    //             />
-    //         ))}
-    //     </div>
-    // );
+    return (
+        <div>
+        <SearchBar/>
+        <div className="movie-container">
+            {movies.map((movie, index) => (
+                <Movie
+                key={index}
+                data={movie}
+                />
+            ))}
+        </div>
+        </div>
+    );
 }
 
 export default MovieView;
