@@ -3,6 +3,7 @@ import Login from "./components/Login";
 import "./App.css";
 import Register from "./components/Register";
 import Home from "./views/Home";
+import SearchBar from "./components/SearchBar";
 
 function App() {
 
@@ -25,6 +26,12 @@ function App() {
     <header>
     <h1>MOVIE FINDER</h1>
     </header>
+    <div className="lil-searchy-search">
+    <SearchBar/>
+    <a href = "/newMovie">
+    <button>+ ADD MOVIE</button>
+    </a>
+    </div>
     <Home/>
     
 

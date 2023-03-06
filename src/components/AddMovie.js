@@ -7,6 +7,8 @@ function AddMovie({onAddMovie}) {
     const [runtime, setRuntime]= useState('')
     const [year, setYear]= useState('')
 
+    
+
     function handleSubmit(e){
         e.preventDefault()
 

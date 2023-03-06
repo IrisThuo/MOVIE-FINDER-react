@@ -3,7 +3,7 @@ import EditMovie from './EditMovie';
 
 
 
-function Movie({id,title, description,runtime, year, onUpdateMovie, onMovieDelete }) {
+function Movie({movie,id,title, description,runtime, year, onUpdateMovie, onMovieDelete }) {
     const [isEditing, setIsEditing] = useState(false);
     
     function handleDeleteClick() {
@@ -19,7 +19,8 @@ function Movie({id,title, description,runtime, year, onUpdateMovie, onMovieDelet
         onUpdateMovie(updatedMovie);
       }
 
-   
+
+
     return (
         <div className="movie">
         {isEditing ? (
@@ -40,6 +41,7 @@ function Movie({id,title, description,runtime, year, onUpdateMovie, onMovieDelet
             </div>
             
           )}
+          
         <button onClick={() => setIsEditing((isEditing) => !isEditing)}>
             <span role="img" aria-label="edit">
               Edit?
@@ -51,22 +53,12 @@ function Movie({id,title, description,runtime, year, onUpdateMovie, onMovieDelet
           🗑
         </span>
       </button>
-      
-        </div>
-            <img src= "https://loremflickr.com/360/450" alt= "movie poster"/>
-        
-        <div className="movie-info">
-            <h3>{title}</h3>
-            <p>{year}</p>
-            <p>{runtime}</p>
-        </div>
 
-        <div className='movie-over'>
-            <h2>Overview</h2>
-            <p>{description}</p>
-        </div>
+      </div>
 
-        </div>
+    
+      </div>
+     
     );
 }
 
