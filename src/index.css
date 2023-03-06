@@ -41,6 +41,11 @@ header{
 
 }
 
+.lil-searchy-search{
+  display: flex;
+  flex-direction: column;
+}
+
 .search:focus{
   outline: 0;
 }
