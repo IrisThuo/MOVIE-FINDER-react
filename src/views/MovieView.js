@@ -30,6 +30,7 @@ function MovieView() {
     return (
         <div>
         <SearchBar/>
+        <button>+ ADD MOVIE</button>
         <div className="movie-container">
             {movies.map((movie, index) => (
                 <Movie

@@ -6,10 +6,18 @@ import "./App.css";
 import Register from "./components/Register";
 
 function App() {
-  const [currentForm, setCurrentForm] = useState("login");
+
+  {/*const [currentForm, setCurrentForm] = useState("login");
   const toggleForm = (formName) => {
     setCurrentForm(formName);
-  };
+  };*/}
+
+ {/* const [token, setToken] = useState();
+
+  if(!token) {
+    return <Login setToken={setToken} />
+  }
+*/}
   return (
     <div className="App">
       <header>
