@@ -51,6 +51,7 @@ function Movie({id,title, description,runtime, year, onUpdateMovie, onMovieDelet
           🗑
         </span>
       </button>
+      
         </div>
             <img src= "https://loremflickr.com/360/450" alt= "movie poster"/>
         

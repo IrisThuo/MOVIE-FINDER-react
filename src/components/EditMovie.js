@@ -15,6 +15,7 @@ function EditMovie({ id, title, description, runtime, year, onUpdateMovie }) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
+        id: id,
         title: movieTitle,
         description: movieDescription,
         runtime: movieRuntime,
